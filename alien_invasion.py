@@ -24,15 +24,15 @@ class AlienInvation:
         """Start the main loop for the game."""
         while True:
             self._check_events()
-            self._update_sceen()
+            self._update_screen()
 
     def _check_events(self):
-        """Respon to keypresses and mouse events."""
+        """Respond to keypresses and mouse events."""
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
 
-    def _update_sceen(self):
+    def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
         self.screen.fill(self.settings.bg_color)
         self.ship.blitme()

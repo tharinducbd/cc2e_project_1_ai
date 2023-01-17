@@ -6,12 +6,15 @@ class Ship:
 
     def __init__(self, ai_game):
         """Initialize the ship and set its starting position."""
+
+        # Get the game screen and get its rect.
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
 
         # Load the ship image and get its rect.
-        self.image = pygame.image.load('images/ship.bmp')
+        self.image = pygame.image.load('cc2e_codes/project_1/images/ship.bmp')
         self.rect = self.image.get_rect()
+
         # Start each new ship at the bottom of the screen.
         self.rect.midbottom = self.screen_rect.midbottom
 
