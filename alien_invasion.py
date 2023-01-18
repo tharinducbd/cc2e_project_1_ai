@@ -49,6 +49,8 @@ class AlienInvation:
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
         self.screen.fill(self.settings.bg_color)
+
+        # Draw the ship with latest modifications
         self.ship.blitme()
 
         # Update the full display Surface to the screen.
