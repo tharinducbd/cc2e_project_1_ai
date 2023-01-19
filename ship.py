@@ -40,4 +40,11 @@ class Ship:
 
     def blitme(self):
         """Draw the ship at its current location."""
+        # print(self.rect.x, self.rect.y)
+        # print(self.rect.top, self.rect.bottom, self.rect.left, self.rect.right)
+        # print(self.rect.topleft, self.rect.bottomleft, self.rect.topright, self.rect.bottomright)
+        # print(self.rect.midtop, self.rect.midleft, self.rect.midbottom, self.rect.midright)
+        # print(self.rect.center, self.rect.centerx, self.rect.centery)
+        # print(self.rect.size, self.rect.width, self.rect.height)
+        # print(self.rect.w, self.rect.h)
         self.screen.blit(self.image, self.rect)
