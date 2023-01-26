@@ -29,6 +29,7 @@ class AlienInvation:
         # Set the game window caption
         pygame.display.set_caption("Alien Invasion")
 
+        # Game object instances
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
         self.aliens = pygame.sprite.Group()
