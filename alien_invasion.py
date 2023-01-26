@@ -126,6 +126,7 @@ class AlienInvation:
         alien = Alien(self)
         alien_width, alien_height = alien.rect.size
 
+        # Alien positioning algorithm.
         alien.x = alien_width + 2 * alien_width * alien_number
         alien.y = alien_height + 2 * alien_height * row_number
         alien.rect.x, alien.rect.y = (alien.x, alien.y)
