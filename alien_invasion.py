@@ -150,6 +150,10 @@ class AlienInvation:
             self._create_fleet()
             self.settings.increase_speed()
 
+            # Increase level.
+            self.stats.level += 1
+            self.sb.prep_level()
+
     def _update_aliens(self):
         """
         Check if the fleet is at an edge,
@@ -254,7 +258,7 @@ class AlienInvation:
         # Draw aliens
         self.aliens.draw(self.screen)
 
-        # Draw the score information.
+        # Draw the score information: score, highscore, level
         self.sb.show_score()
 
         # Draw the play button if the game is inactive.
